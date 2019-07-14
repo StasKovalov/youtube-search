@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import './LanguageMain.css'
 
-import Russia from '../../assets/images/russia.svg'
-import England from '../../assets/images/english.svg'
+import { changeLocale } from '../../services/locale/editLang';
+import Russia from '../../assets/images/russia.svg';
+import England from '../../assets/images/english.svg';
 import Button from '../../components/UI/Button/Button';
 
 
@@ -23,6 +24,7 @@ class LanguageMain extends Component {
     }
 
     onChangeLocale = ({ target: { dataset: { lang } } }) => {
+        changeLocale(lang);
         this.setState({ lang })
         localStorage.setItem('lang', lang)
     }
