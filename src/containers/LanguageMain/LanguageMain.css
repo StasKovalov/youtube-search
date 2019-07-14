@@ -1,4 +1,11 @@
 .language-main {
+    height: 100vh;
+    background: linear-gradient(to right, #333333, #dd1818); 
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+.language-items {
     display: flex;
     justify-content: center;
     margin-top: 100px;

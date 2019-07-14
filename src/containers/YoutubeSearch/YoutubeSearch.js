@@ -3,7 +3,6 @@ import './YoutubeSearch.css';
 
 import { TEXT } from '../../services/locale/editLang'
 import VideoList from '../../components/VideoList/VideoList';
-import HistoryWatch from '../../components/HistoryWatch/HistoryWatch';
 import VideoPlayer from '../../components/VideoPlayer/VideoPlayer';
 import SearchArea from '../../components/SearchArea/SearchArea';
 import { serchRequst } from '../../index';
@@ -71,11 +70,9 @@ class YoutubeSearch extends Component {
     }
 
     render() {
-        console.log('YOutube search rende')
         let videoList = null;
         let buttonDisable = false;
         let buttonText = TEXT.buttonText;
-        let show = this.state.history.length ? true : null;
         if (this.state.loading) {
             buttonDisable = this.state.loading;
             buttonText = TEXT.buttonTextLoading

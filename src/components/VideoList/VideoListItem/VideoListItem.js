@@ -10,7 +10,8 @@ const videoListItem = (props) => {
              onClick = {props.clicked}>
             <div className='video-item__box'>
                 <img className = 'video-item__img' 
-                     src={props.video.imgSrc}/>
+                     src={props.video.imgSrc}
+                     alt = 'Video Preview'/>
             </div>
             <div className='video-item__descr'>
                 <p className='video-item__name'>{props.video.title}</p>

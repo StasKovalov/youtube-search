@@ -6,7 +6,8 @@ const logo = props => {
     return (
         <div className = 'logo'>
         <img className = 'logo__img'
-             src = {Logo}/>
+             src = {Logo}
+             alt = 'Logo'/>
         </div>
     )
 }

@@ -7,7 +7,6 @@ import SwitchLang from '../SwitchLang/SwitchLang';
 import NavigationItems from '../Navigation/NavigationItems/NavigationItems';
 
 const toolbar = props => {
-    console.log('Произошел рендер компонента [Tollbar.js]');
     return (
         <header className = 'toolbar'>
             <Logo />

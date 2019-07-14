@@ -6,6 +6,7 @@ const videoPlayer = props => {
     if (props.id) {
         iframe = (<iframe width="80%"
             height='300px'
+            title = 'Video Player'
             src={`https://www.youtube.com/embed/${props.id}`}
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

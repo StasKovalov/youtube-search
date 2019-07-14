@@ -10,7 +10,8 @@ const videoHistoryItem = props => {
             data-id = {props.id}>
         <div className = 'video-preview'>
             <img className = 'video-preview__img'
-                 src = {imgSrc}></img>
+                 src = {imgSrc}
+                 alt = 'Video Preview' />
         </div>
         <div className = 'video-description'>
             <span className = 'video-description__span'><strong>{title}</strong></span>

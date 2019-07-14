@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
-import { numberWithCommas } from './helpers/functions';
 import axios from 'axios';
 
 const API_KEY = 'AIzaSyDYIhxOfRHEhQArL79Jif6ozfRyK1AMBF8';
@@ -47,7 +46,7 @@ export const serchRequst = async function () {
             }
         })
 
-        const likeCount = numberWithCommas(likeCountInfo.data.items[0].statistics.likeCount);
+        const likeCount = likeCountInfo.data.items[0].statistics.likeCount;
 
         return {
             ...video,
