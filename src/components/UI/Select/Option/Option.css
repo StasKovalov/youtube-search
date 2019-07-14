@@ -1,0 +1,14 @@
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.option-lang {
+    width: 50%;
+}
+
+.option__img {
+    width: 40%;
+}

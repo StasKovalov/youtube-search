@@ -1,0 +1,30 @@
+.video-item {
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+
+.video-item:last-child {
+    border-bottom: none;
+}
+
+.video-item__box {
+    width: 150px;
+}
+
+.video-item__img {
+    width: 100%;
+}
+
+.video-item__descr {
+    width: 60%;
+    margin-left: 20px;
+}
+
+.video-item__name {
+    font-weight: bold;
+    font-size: 14px;
+}

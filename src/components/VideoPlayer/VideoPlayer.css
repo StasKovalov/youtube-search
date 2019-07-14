@@ -1,0 +1,13 @@
+.video-player {
+   display: flex;
+   justify-content: center;
+}
+
+.video-player__items {
+    text-align: center;
+    width: 50%;
+}
+
+.video-player__description {
+    margin: 20px 0px;
+}

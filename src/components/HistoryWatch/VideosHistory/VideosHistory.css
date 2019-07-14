@@ -1,0 +1,9 @@
+.video-history {
+    margin: 0 auto;
+    width: 80%;
+    padding: 40px;
+    border: 1px solid #eee;
+    border-radius:  5px;
+    box-sizing: border-box;
+    box-shadow: 2px -2px 6px -4px rgba(0,0,0,0.75);
+}

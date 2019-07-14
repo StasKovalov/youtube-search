@@ -1,0 +1,19 @@
+.select {
+    width: 80px;
+}
+
+.select-value {
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px; 
+    color: white;
+    background: #eee;
+}
+
+.options {
+    border: 1px solid rgb(220, 220, 220);
+    padding: 5px;
+    color: white;
+    background: #eee;
+    margin-top: 10px;
+}

@@ -1,0 +1,6 @@
+.switch-lang {
+    position: absolute;
+    right: 5%;
+    top: 28%;
+    z-index: 100;
+}

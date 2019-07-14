@@ -1,0 +1,21 @@
+.video-list {
+    overflow: scroll;
+    max-height: 335px;
+    z-index: 120;
+    position: absolute;
+    width: 44%;
+    display: flex;
+    left: 22%;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background: white;
+    top: 138px;
+}
+
+.video-list__wrapper {
+    position: relative;
+}

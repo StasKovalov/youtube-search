@@ -1,0 +1,17 @@
+.language-main {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.language-item {
+    width: 20%;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.language-item__img {
+    height: auto;
+    width: 100%;
+}
