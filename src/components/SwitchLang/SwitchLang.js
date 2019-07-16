@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Select from '../UI/Select/Select';
 import './SwitchLang.css';
 
-class  SwitchLang extends Component {
+class SwitchLang extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -11,19 +11,20 @@ class  SwitchLang extends Component {
     }
 
     onSelectClick = () => {
-        this.setState(prevState => ({select: !prevState.select}))
+        this.setState(prevState => ({ select: !prevState.select }))
     }
 
-  render() {
-      return (
-        <div className = 'switch-lang'>
-            <Select changeLang = {this.props.click}
-                    select = {this.state.select} 
+    render() {
+        return (
+            <div className='switch-lang'>
+                <Select
+                    changeLang={this.props.click}
+                    select={this.state.select}
                     lang={this.props.lang}
-                    click = {this.onSelectClick}/>
-        </div>
-      )
-  }
+                    click={this.onSelectClick} />
+            </div>
+        )
+    }
 }
 
 export default SwitchLang;

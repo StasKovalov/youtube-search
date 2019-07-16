@@ -3,24 +3,27 @@ import './VideoListItem.css';
 
 import Button from '../../UI/Button/Button';
 
-const videoListItem = (props) => {
+const videoListItem = ({video, likesText, click, watchButton }) => {
     return (
-        <div className='video-item'
-             data-videoid ={props.video.videoId}
-             onClick = {props.clicked}>
+        <div
+            className='video-item'
+            data-videoid={video.videoId}
+        >
             <div className='video-item__box'>
-                <img className = 'video-item__img' 
-                     src={props.video.imgSrc}
-                     alt = 'Video Preview'/>
+                <img 
+                    className='video-item__img'
+                    src={video.imgSrc}
+                    alt='Video Preview' 
+                />
             </div>
             <div className='video-item__descr'>
-                <p className='video-item__name'>{props.video.title}</p>
-                <p className='video-item__votes'><strong>{props.video.likeCount}</strong> {props.likes}</p>
+                <p className='video-item__name'>{video.title}</p>
+                <p className='video-item__votes'><strong>{video.likeCount}</strong> {likesText}</p>
             </div>
-        <Button clicked = {props.click}
-                videoId = {props.videoId}
-                >{props.watchButton}</Button>
-           
+            <Button clicked={click}
+                videoId={video.videoId}
+            >{watchButton}</Button>
+
         </div>
     )
 

@@ -4,7 +4,7 @@ import './SearchArea.css';
 
 const searchArea = props => {
 
-    let { videoList,
+    const { videoList,
         placeholderText,
         inputValue,
         inputOnChange,
@@ -16,14 +16,16 @@ const searchArea = props => {
     return (
         <Fragment>
             <div className='search-area'>
-             <i className="fas fa-search"></i>
-                <input type='text'
+                <i className="fas fa-search"></i>
+                <input
+                    type='text'
                     placeholder={placeholderText}
                     value={inputValue}
                     className='search-area__input'
                     onChange={inputOnChange}
                     onKeyPress={inputOnKeyPress} />
-                <button disabled={buttonDisable}
+                <button
+                    disabled={buttonDisable}
                     className='search-area__button'
                     onClick={onSearchHandler}>
                     {buttonText}</button>

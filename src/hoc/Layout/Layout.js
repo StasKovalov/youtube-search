@@ -1,27 +1,19 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
+
 import Toolbar from '../../components/Toolbar/Toolbar';
 
-class Layout extends Component {
-
-    render() {
-       let homePage = null;
-       if(this.props.lang) {
-        homePage =  (
-            <div className='home-page'>
-                <Toolbar lang = {this.props.lang}
-                         click = {this.props.onChangeLang} />
+const Layout = ({ lang, onChangeLang, ...restProps }) => {
+    return (
+        <Fragment>
+            {lang ? (<div className='home-page'>
+                <Toolbar lang={lang}
+                    click={onChangeLang} />
                 <main>
-                    {this.props.children}
+                    {restProps.children}
                 </main>
-            </div>
-        )
-       }
-        return (
-            <Fragment>
-                {homePage}
-            </Fragment>
-        )
-    }
+            </div>) : null}
+        </Fragment>
+    )
 }
 
 export default Layout;

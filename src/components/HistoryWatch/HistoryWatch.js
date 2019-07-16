@@ -36,10 +36,13 @@ class HistoryWatch extends Component {
     }
 
     render() {
-        let videoHistory = this.state.history.length ? <VideoHistory clicked={this.deleteVideoInHistory}
+        let videoHistory = this.state.history.length ?
+            <VideoHistory
+            clicked={this.deleteVideoInHistory}
             videos={this.state.history}
             buttonText={TEXT.deleteButton}
-            historyItemClick={this.onHistoryItemClick} /> : null;
+            historyItemClick={this.onHistoryItemClick}
+            /> : null;
         return (
             <div className='history-wrapper'>
                 <h1>{TEXT.historyWatch}</h1>

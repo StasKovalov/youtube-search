@@ -8,13 +8,15 @@ import NavigationItems from '../Navigation/NavigationItems/NavigationItems';
 
 const toolbar = props => {
     return (
-        <header className = 'toolbar'>
+        <header className='toolbar'>
             <Logo />
-        <nav className = 'desktop-only'>
-             <NavigationItems/>
-        </nav>
-             <SwitchLang   lang={props.lang}
-                           click={props.click}/>
+            <nav className='desktop-only'>
+                <NavigationItems />
+            </nav>
+            <SwitchLang
+                lang={props.lang}
+                click={props.click} 
+                />
         </header>
     )
 }

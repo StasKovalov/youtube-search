@@ -1,13 +1,12 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import Wrapper from './hoc/Wrapper/Wrapper';
+
+import Wrapper from './containers/Wrapper/Wrapper';
 
 class App extends Component {
   render() {
     return (
-      <Fragment>
-<Wrapper/>  
-      </Fragment>
+      <Wrapper/>  
     )
   }
 }
