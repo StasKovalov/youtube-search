@@ -92,7 +92,7 @@ class YoutubeSearch extends Component {
 
         return (
             <Fragment>
-                <SearchArea
+               <SearchArea
                     placeholderText={TEXT.placeholder}
                     inputValue={value}
                     inputOnChange={this.onChangeHandler}
