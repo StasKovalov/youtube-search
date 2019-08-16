@@ -1,6 +1,6 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-import './LanguageMain.css'
+import './index.css'
 
 import Russia from '../../assets/images/russia.svg';
 import England from '../../assets/images/english.svg';

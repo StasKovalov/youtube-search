@@ -1,17 +1,17 @@
 import React from 'react';
 
-import './Toolbar.css';
+import './index.css';
 
 import Logo from '../../components/UI/Logo/Logo';
 import SwitchLang from '../SwitchLang/SwitchLang';
-import NavigationItems from '../Navigation/NavigationItems/NavigationItems';
+import Navigation from '../Navigation/Navigation';
 
-const toolbar = props => {
+const Toolbar = props => {
     return (
         <header className='toolbar'>
             <Logo />
             <nav className='desktop-only'>
-                <NavigationItems />
+                <Navigation />
             </nav>
             <SwitchLang
                 lang={props.lang}
@@ -21,4 +21,4 @@ const toolbar = props => {
     )
 }
 
-export default toolbar;
+export default Toolbar;

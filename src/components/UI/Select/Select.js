@@ -1,12 +1,12 @@
 import React from 'react';
 import Option from './Option/Option';
-import './Select.css'
+import './index.css'
 
 import Russia from '../../../assets/images/russia.svg'
 import England from '../../../assets/images/english.svg'
 import { selectLang } from '../../../helpers/functions';
 
-const select = (props) => {
+const Select = (props) => {
     let selectValue = selectLang(props.lang);
     let options = null;
     if (props.select) {
@@ -40,4 +40,4 @@ const select = (props) => {
     )
 }
 
-export default select;
+export default Select;

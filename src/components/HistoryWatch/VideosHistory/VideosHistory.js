@@ -1,6 +1,6 @@
 import React from 'react';
 import VideoHistoryItem from './VideoHistoryItem/VideoHistoryItem';
-import './VideosHistory.css';
+import './index.css';
 
 const videosHistory = ({ videos, historyItemClick, ...restProps }) => (
     <div className='video-history'>

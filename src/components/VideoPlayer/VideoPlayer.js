@@ -1,7 +1,7 @@
 import React from 'react';
-import './VideoPlayer.css';
+import './index.css';
 
-const videoPlayer = props => {
+const VideoPlayer = props => {
     let iframe = null;
     if (props.id) {
         iframe = (<iframe width="80%"
@@ -22,4 +22,4 @@ const videoPlayer = props => {
     )
 }
 
-export default videoPlayer;
+export default VideoPlayer;

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Logo.css';
+import './index.css';
 
 import logo from '../../../assets/images/logo.png'
 

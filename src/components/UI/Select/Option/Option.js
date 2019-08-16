@@ -1,7 +1,7 @@
 import React from 'react';
-import './Option.css'
+import './index.css'
 
-const option = props => {
+const Option = props => {
     return (
         <div data-lang = {props.lang} onClick = {props.click} className = 'option' id = {props.id}>
             {props.children}
@@ -9,4 +9,4 @@ const option = props => {
     )
 }
 
-export default option;
+export default Option;

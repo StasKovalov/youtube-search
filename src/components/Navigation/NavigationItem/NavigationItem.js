@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import './NavigationItem.css';
+import './index.css';
 
-const navigationItem = ({exact, link, children}) => {
+const NavigationItem = ({exact, link, children}) => {
     return (
         <li className='navigation-item'>
             <NavLink
@@ -16,4 +16,4 @@ const navigationItem = ({exact, link, children}) => {
     )
 }
 
-export default navigationItem;
+export default NavigationItem;

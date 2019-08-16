@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
-import './SearchArea.css';
+import './index.css';
 
 
-const searchArea = props => {
+const SearchArea = props => {
 
     const { videoList,
         placeholderText,
@@ -35,4 +35,4 @@ const searchArea = props => {
     )
 }
 
-export default searchArea;
+export default SearchArea;

@@ -1,5 +1,5 @@
 import React from 'react';
-import './VideoListItem.css';
+import './index.css';
 
 import Button from '../../UI/Button/Button';
 

@@ -1,13 +1,13 @@
 import React from 'react';
-import './NavigationItems.css';
+import './index.css';
 
-import { TEXT } from '../../../services/locale/editLang';
+import { TEXT } from '../../services/locale/editLang';
 
 import NavigationItem from './NavigationItem/NavigationItem';
 
 
 
-const navigationItems = props => {
+const Navigation = props => {
     return (
             <ul className='navigation-items'>
                 <NavigationItem link='/search' exact>{TEXT.navigation.search}</NavigationItem>
@@ -16,4 +16,4 @@ const navigationItems = props => {
     )
 }
 
-export default navigationItems;
+export default Navigation;

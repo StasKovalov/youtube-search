@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Select from '../UI/Select/Select';
-import './SwitchLang.css';
+import './index.css';
 
 class SwitchLang extends Component {
     constructor(props) {

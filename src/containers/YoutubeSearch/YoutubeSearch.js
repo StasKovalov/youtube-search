@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from 'react'
-import './YoutubeSearch.css';
+import './index.css';
 
 import { TEXT } from '../../services/locale/editLang'
 import { serchRequst } from '../../index';
 
-import VideoList from '../../components/VideoList/VideoList';
-import VideoPlayer from '../../components/VideoPlayer/VideoPlayer';
-import SearchArea from '../../components/SearchArea/SearchArea';
+import VideoList from "../../components/VideoList/VideoList";
+import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
+import SearchArea from "../../components/SearchArea/SearchArea";
 
 
 class YoutubeSearch extends Component {

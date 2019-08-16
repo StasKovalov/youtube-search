@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
-import './VideoList.css';
+import './index.css';
 import VideoListItem from './VideoListItem/VideoListItem';
 import Backdrop from '../../components/UI/Backdrop/Backdrop';
 
-const videoList = ({ videos, click, likesText, add, watchButton, show, hide, ...restProps }) => (
+const VideoList = ({ videos, click, likesText, add, watchButton, show, hide, ...restProps }) => (
     <Fragment>
         <Backdrop show={show} hideClick={hide} />
         <div className='video-list'>
@@ -19,4 +19,4 @@ const videoList = ({ videos, click, likesText, add, watchButton, show, hide, ...
     </Fragment>
 )
 
-export default videoList;
+export default VideoList;

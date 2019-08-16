@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import VideoHistory from '../HistoryWatch/VideosHistory/VideosHistory';
-import './HistoryWatch.css'
+import './index.css'
 import { TEXT } from '../../services/locale/editLang';
 
 class HistoryWatch extends Component {
