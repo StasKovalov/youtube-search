@@ -1,18 +1,22 @@
 .language-main {
     height: 100vh;
-    background: linear-gradient(to right, #333333, #dd1818); 
+    background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: 1px solid transparent;
     box-sizing: border-box;
 }
 
 .language-items {
     display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     justify-content: center;
-    margin-top: 100px;
 }
 
 .language-item {
-    width: 20%;
+    align-items: center;
+    width: 50%;
     text-align: center;
     margin: 10px;
     cursor: pointer;

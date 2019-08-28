@@ -5,3 +5,7 @@
 .logo__img {
     width: 100%;
 }
+
+.link:active {
+    opacity: 0.6;
+}

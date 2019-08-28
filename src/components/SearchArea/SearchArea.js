@@ -2,19 +2,9 @@ import React, { Fragment } from 'react';
 import './index.css';
 
 
-const SearchArea = props => {
-
-    const { videoList,
-        placeholderText,
-        inputValue,
-        inputOnChange,
-        inputOnKeyPress,
-        buttonDisable,
-        buttonText,
-        onSearchHandler } = props;
-
-    return (
-        <Fragment>
+const SearchArea = ({ videoList, placeholderText, inputValue, inputOnChange, inputOnKeyPress, buttonDisable, buttonText, onSearchHandler}) => 
+     (
+        <div className='wrapper-search'>
             <div className='search-area'>
                 <i className="fas fa-search"></i>
                 <input
@@ -31,8 +21,7 @@ const SearchArea = props => {
                     {buttonText}</button>
             </div>
             {videoList}
-        </Fragment>
+        </div>
     )
-}
 
 export default SearchArea;
